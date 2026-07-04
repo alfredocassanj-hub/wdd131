@@ -118,7 +118,7 @@ footer p {
 
 /* =========================
    RESPONSIVO
-========================= */
+========================== */
 @media (max-width: 700px) {
     .card {
         grid-template-columns: 1fr;

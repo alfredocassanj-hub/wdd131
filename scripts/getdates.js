@@ -1,4 +1,4 @@
-// Current year for footer
+// Current year for footers
 const today = new Date();
 
 document.getElementById("currentyear").textContent = today.getFullYear();
