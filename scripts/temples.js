@@ -15,5 +15,4 @@ navigation.classList.toggle("open");
 
 menuButton.textContent =
 navigation.classList.contains("open") ? "✖" : "☰";
-
 });

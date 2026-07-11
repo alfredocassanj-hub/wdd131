@@ -10,7 +10,6 @@
     justify-content:center;
     gap:20px;
 }
-
 .gallery{
     grid-template-columns:repeat(3,1fr);
 }
