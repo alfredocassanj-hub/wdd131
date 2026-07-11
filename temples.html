@@ -1,106 +1,154 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Temple Album</title>
+    <title>Temple Album | WDD 131 | Alfredo Cassanje</title>
 
-    <meta name="description" content="Temple Album - WDD131 Assignment">
+    <meta name="description"
+        content="Temple Album page created for WDD 131 Dynamic Web Fundamentals. This project displays beautiful temples using HTML, CSS, and JavaScript.">
+
     <meta name="author" content="Alfredo Cassanje">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 
+
     <script src="scripts/temples.js" defer></script>
+
 </head>
+
 
 <body>
 
+
 <header>
+
     <h2>Temple Album</h2>
 
-    <button id="menu">&#9776;</button>
+
+    <button id="menu" aria-label="Open Menu">
+        ☰
+    </button>
+
 
     <nav class="navigation">
 
         <a href="#">Home</a>
+
         <a href="#">Old</a>
+
         <a href="#">New</a>
+
         <a href="#">Large</a>
+
         <a href="#">Small</a>
 
     </nav>
 
+
 </header>
+
+
 
 <main>
 
-<h1>Temple Album</h1>
+    <h1>Temple Album</h1>
 
-<div class="gallery">
 
-<figure>
-<img src="images/temple1.webp" alt="Temple" loading="lazy">
-<figcaption>Salt Lake Temple</figcaption>
-</figure>
+    <section class="gallery">
 
-<figure>
-<img src="images/temple2.webp" alt="Temple" loading="lazy">
-<figcaption>Rome Temple</figcaption>
-</figure>
 
-<figure>
-<img src="images/temple3.webp" alt="Temple" loading="lazy">
-<figcaption>Paris Temple</figcaption>
-</figure>
+        <figure>
+            <img src="images/temple1.webp" alt="Salt Lake Temple" loading="lazy">
+            <figcaption>Salt Lake Temple</figcaption>
+        </figure>
 
-<figure>
-<img src="images/temple4.webp" alt="Temple" loading="lazy">
-<figcaption>Tokyo Temple</figcaption>
-</figure>
 
-<figure>
-<img src="images/temple5.webp" alt="Temple" loading="lazy">
-<figcaption>London Temple</figcaption>
-</figure>
+        <figure>
+            <img src="images/temple2.webp" alt="Rome Italy Temple" loading="lazy">
+            <figcaption>Rome Italy Temple</figcaption>
+        </figure>
 
-<figure>
-<img src="images/temple6.webp" alt="Temple" loading="lazy">
-<figcaption>Accra Temple</figcaption>
-</figure>
 
-<figure>
-<img src="images/temple7.webp" alt="Temple" loading="lazy">
-<figcaption>Nairobi Temple</figcaption>
-</figure>
+        <figure>
+            <img src="images/temple3.webp" alt="Paris France Temple" loading="lazy">
+            <figcaption>Paris France Temple</figcaption>
+        </figure>
 
-<figure>
-<img src="images/temple8.webp" alt="Temple" loading="lazy">
-<figcaption>Manila Temple</figcaption>
-</figure>
 
-<figure>
-<img src="images/temple9.webp" alt="Temple" loading="lazy">
-<figcaption>Mexico City Temple</figcaption>
-</figure>
+        <figure>
+            <img src="images/temple4.webp" alt="Tokyo Japan Temple" loading="lazy">
+            <figcaption>Tokyo Japan Temple</figcaption>
+        </figure>
 
-</div>
+
+        <figure>
+            <img src="images/temple5.webp" alt="London England Temple" loading="lazy">
+            <figcaption>London England Temple</figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="images/temple6.webp" alt="Accra Ghana Temple" loading="lazy">
+            <figcaption>Accra Ghana Temple</figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="images/temple7.webp" alt="Nairobi Kenya Temple" loading="lazy">
+            <figcaption>Nairobi Kenya Temple</figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="images/temple8.webp" alt="Manila Philippines Temple" loading="lazy">
+            <figcaption>Manila Philippines Temple</figcaption>
+        </figure>
+
+
+        <figure>
+            <img src="images/temple9.webp" alt="Mexico City Mexico Temple" loading="lazy">
+            <figcaption>Mexico City Mexico Temple</figcaption>
+        </figure>
+
+
+    </section>
+
 
 </main>
 
+
+
 <footer>
 
-<p>&copy; <span id="year"></span> | Alfredo Cassanje | Angola</p>
+    <p>
+        &copy; <span id="currentyear"></span>
+        | Alfredo Cassanje
+        | Angola
+    </p>
 
-<p id="lastModified"></p>
+
+    <p id="lastModified"></p>
+
 
 </footer>
 
+
 </body>
+
 </html>
+```
