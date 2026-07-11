@@ -21,4 +21,3 @@ menuButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
 
 });
-// Close the menu when a link is clicked
