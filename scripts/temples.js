@@ -23,8 +23,6 @@ if (menuButton && navigation) {
 
 }
 
-
-
 const year = document.querySelector("#currentyear");
 
 if (year) {
