@@ -12,16 +12,16 @@ body {
 }
 
 
-/* HEADER .*/
+/* HEADER */
 
 header {
     background-color: #1d3557;
     color: white;
     padding: 1rem;
-    display: flex;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 
@@ -32,11 +32,8 @@ header {
 }
 
 
-/* HAMBURGER BUTTON */
-
 #menu {
-    display: block;
-    background: transparent;
+    background: none;
     border: none;
     color: white;
     font-size: 2rem;
@@ -44,12 +41,18 @@ header {
 }
 
 
+
 /* NAVIGATION */
 
 #navigation {
     display: none;
     flex-direction: column;
-    width: 100%;
+    grid-column: 1 / 3;
+    margin-top: 1rem;
+}
+
+#navigation.open {
+    display: flex;
 }
 
 
