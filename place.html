@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Alfredo Cassanje">
@@ -15,141 +14,94 @@
     <script src="scripts/place.js" defer></script>
 </head>
 
-
 <body>
 
     <header>
         <h1>Angola</h1>
     </header>
 
-
     <main>
 
         <!-- Hero Image -->
         <section class="hero">
-
             <picture>
-
-                <source 
+                <source
                     media="(min-width: 768px)"
                     srcset="images/hero-large.webp">
 
-                <img 
-                    src="images/hero-small.webp"
-                    alt="Beautiful landscape of Angola">
-
+                <img src="images/hero-small.webp" alt="Landscape of Angola">
             </picture>
-
         </section>
-
-
 
         <!-- Information Cards -->
         <section class="cards">
 
-
-            <!-- Country Data -->
+            <!-- Data -->
             <article class="card data">
-
                 <h2>Data</h2>
 
                 <dl>
-
-                    <dt>Capital:</dt>
+                    <dt>Capital</dt>
                     <dd>Luanda</dd>
 
-
-                    <dt>Population:</dt>
+                    <dt>Population</dt>
                     <dd>36 Million</dd>
 
-
-                    <dt>Languages:</dt>
+                    <dt>Languages</dt>
                     <dd>Portuguese</dd>
 
-
-                    <dt>Currency:</dt>
+                    <dt>Currency</dt>
                     <dd>Angolan Kwanza (AOA)</dd>
 
-
-                    <dt>Area:</dt>
+                    <dt>Area</dt>
                     <dd>1,246,700 km²</dd>
 
-
-                    <dt>Time Zone:</dt>
+                    <dt>Time Zone</dt>
                     <dd>UTC +1</dd>
-
                 </dl>
-
             </article>
-
-
 
             <!-- Weather -->
             <article class="card weather">
 
                 <h2>Weather</h2>
 
-
-                <img 
-                    src="images/weather.svg"
-                    alt="Weather icon"
-                    class="weather-icon">
-
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
 
                 <dl>
 
-                    <dt>Temperature:</dt>
-                    <dd>
-                        <span id="temperature">8°C</span>
-                    </dd>
+                    <dt>Temperature</dt>
+                    <dd><span id="temperature">8°C</span></dd>
 
-
-                    <dt>Conditions:</dt>
+                    <dt>Conditions</dt>
                     <dd>Sunny</dd>
 
+                    <dt>Wind</dt>
+                    <dd><span id="windspeed">15 km/h</span></dd>
 
-                    <dt>Wind:</dt>
-                    <dd>
-                        <span id="windspeed">15 km/h</span>
-                    </dd>
-
-
-                    <dt>Wind Chill:</dt>
-                    <dd>
-                        <span id="windchill">N/A</span>
-                    </dd>
-
+                    <dt>Wind Chill</dt>
+                    <dd><span id="windchill"></span></dd>
 
                 </dl>
 
             </article>
 
-
         </section>
 
-
     </main>
-
-
 
     <footer>
 
         <p>
-            &copy;
-            <span id="year"></span>
-            | Alfredo Cassanje | Angola
+            &copy; <span id="year"></span> | Alfredo Cassanje | Angola
         </p>
-
 
         <p>
             Last Modification:
             <span id="lastModified"></span>
         </p>
 
-
     </footer>
 
-
 </body>
-
 </html>

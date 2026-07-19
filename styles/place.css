@@ -12,7 +12,7 @@
     --accent:#ffcd00;
     --light:#f8f8f8;
     --white:#ffffff;
-    --text:#222;
+    --text:#222222;
     --shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
@@ -25,6 +25,9 @@
     box-sizing:border-box;
 }
 
+/* ------------------------------
+   Body
+--------------------------------*/
 body{
     font-family:'Roboto',sans-serif;
     background:var(--light);
@@ -47,13 +50,14 @@ header h1{
 }
 
 /* ------------------------------
-   Hero
+   Hero Image
 --------------------------------*/
 .hero img{
-    width:100%;
     display:block;
+    width:100%;
     height:auto;
 }
+
 /* ------------------------------
    Cards
 --------------------------------*/
@@ -76,16 +80,16 @@ header h1{
     color:var(--white);
     padding:.8rem;
     border-radius:8px;
-    margin-bottom:1.2rem;
+    margin-bottom:1rem;
 }
 
 /* ------------------------------
-   Data Lists
+   Lists
 --------------------------------*/
 dl{
     display:grid;
     grid-template-columns:1fr 1fr;
-    row-gap:.7rem;
+    gap:.5rem;
 }
 
 dt{
@@ -104,8 +108,10 @@ dd{
 }
 
 .weather-icon{
-    width:70px;
-    margin-bottom:1rem;
+    width:80px;
+    height:auto;
+    display:block;
+    margin:0 auto 1rem;
 }
 
 .weather dl{
@@ -116,15 +122,15 @@ dd{
    Footer
 --------------------------------*/
 footer{
-    margin-top:2rem;
     background:var(--secondary);
     color:var(--white);
     text-align:center;
     padding:1rem;
+    margin-top:2rem;
 }
 
 footer p{
-    margin:.4rem 0;
+    margin:.5rem 0;
 }
 
 /* ------------------------------
@@ -135,12 +141,56 @@ img{
 }
 
 /* ------------------------------
-   Accessibility
+   Desktop Layout
 --------------------------------*/
-a{
-    color:inherit;
-}
+@media screen and (min-width:768px){
 
-a:hover{
-    text-decoration:underline;
+    header h1{
+        font-size:3rem;
+    }
+
+    .hero{
+        position:relative;
+    }
+
+    .hero img{
+        width:100%;
+        height:550px;
+        object-fit:cover;
+    }
+
+    .cards{
+        position:absolute;
+        top:170px;
+        left:0;
+        right:0;
+
+        display:flex;
+        justify-content:space-between;
+
+        padding:2rem;
+    }
+
+    .card{
+        width:320px;
+        background:rgba(255,255,255,.92);
+    }
+
+    .data{
+        align-self:flex-start;
+    }
+
+    .weather{
+        align-self:flex-end;
+    }
+
+    /* Esconde o SVG no Desktop */
+    .weather-icon{
+        display:none;
+    }
+
+    /* Emoji exigido pela actividade */
+    .weather h2::after{
+        content:" ⛅";
+    }
 }
