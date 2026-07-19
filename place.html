@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Alfredo Cassanje">
-    <meta name="description" content="Discover Angola, a beautiful country in Southern Africa.">
+    <meta name="description"
+        content="Discover Angola, a beautiful country in Southern Africa, including its culture, geography, weather, and national information.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Angola | Country Page</title>
+    <title>Angola | Discover Angola - WDD 131 Country Page</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
 
+    <!-- JavaScript -->
     <script src="scripts/place.js" defer></script>
 </head>
 
@@ -29,14 +38,16 @@
                     media="(min-width: 768px)"
                     srcset="images/hero-large.webp">
 
-                <img src="images/hero-small.webp" alt="Landscape of Angola">
+                <img
+                    src="images/hero-small.webp"
+                    alt="Landscape of Angola">
             </picture>
         </section>
 
         <!-- Information Cards -->
         <section class="cards">
 
-            <!-- Data -->
+            <!-- Data Card -->
             <article class="card data">
                 <h2>Data</h2>
 
@@ -61,15 +72,17 @@
                 </dl>
             </article>
 
-            <!-- Weather -->
+            <!-- Weather Card -->
             <article class="card weather">
 
                 <h2>Weather</h2>
 
-                <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+                <img
+                    src="images/weather.svg"
+                    alt="Weather icon"
+                    class="weather-icon">
 
                 <dl>
-
                     <dt>Temperature</dt>
                     <dd><span id="temperature">8°C</span></dd>
 
@@ -81,7 +94,6 @@
 
                     <dt>Wind Chill</dt>
                     <dd><span id="windchill"></span></dd>
-
                 </dl>
 
             </article>
@@ -91,7 +103,6 @@
     </main>
 
     <footer>
-
         <p>
             &copy; <span id="year"></span> | Alfredo Cassanje | Angola
         </p>
@@ -100,8 +111,8 @@
             Last Modification:
             <span id="lastModified"></span>
         </p>
-
     </footer>
 
 </body>
+
 </html>

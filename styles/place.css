@@ -1,9 +1,4 @@
 /* ------------------------------
-   Google Font
---------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-/* ------------------------------
    Variables
 --------------------------------*/
 :root{
@@ -84,7 +79,7 @@ header h1{
 }
 
 /* ------------------------------
-   Lists
+   Data Lists
 --------------------------------*/
 dl{
     display:grid;
@@ -160,6 +155,7 @@ img{
     }
 
     .cards{
+
         position:absolute;
         top:170px;
         left:0;
@@ -184,12 +180,12 @@ img{
         align-self:flex-end;
     }
 
-    /* Esconde o SVG no Desktop */
+    /* Esconde o SVG no desktop */
     .weather-icon{
         display:none;
     }
 
-    /* Emoji exigido pela actividade */
+    /* Ícone exigido pela atividade */
     .weather h2::after{
         content:" ⛅";
     }
