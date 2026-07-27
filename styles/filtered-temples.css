@@ -1,0 +1,169 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap');
+
+
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background: #1d3557;
+    color: white;
+    padding: 1rem;
+}
+
+.site-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* ===========================
+   MENU BUTTON
+=========================== */
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+#navigation {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#navigation.open {
+    display: flex;
+}
+
+#navigation a {
+    color: white;
+    text-decoration: none;
+    padding: .75rem;
+    text-align: center;
+    transition: background .3s;
+}
+
+#navigation a:hover {
+    background: rgba(255,255,255,.2);
+}
+
+
+/* ===========================
+   MAIN
+=========================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+/* ===========================
+   TEMPLE CARD
+=========================== */
+
+figure {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    transition: transform .3s;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+}
+
+figure img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    padding: 1rem;
+}
+
+figcaption h2 {
+    text-align: center;
+    margin-bottom: .8rem;
+    color: #1d3557;
+    font-size: 1.2rem;
+}
+
+figcaption p {
+    margin: .35rem 0;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: .3rem;
+}
