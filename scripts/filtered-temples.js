@@ -1,82 +1,82 @@
 const temples = [
 
-{
-    templeName: "Salt Lake Temple",
-    location: "Salt Lake City, Utah",
-    dedicated: "1893, April 6",
-    area: 253000,
-    imageUrl: "images/temple1.webp"
-},
+    {
+        templeName: "Salt Lake Temple",
+        location: "Salt Lake City, Utah",
+        dedicated: "1893, April 6",
+        area: 253000,
+        imageUrl: "images/temple1.webp"
+    },
 
-{
-    templeName: "Rome Italy Temple",
-    location: "Rome, Italy",
-    dedicated: "2019, March 10",
-    area: 41000,
-    imageUrl: "images/temple2.webp"
-},
+    {
+        templeName: "Rome Italy Temple",
+        location: "Rome, Italy",
+        dedicated: "2019, March 10",
+        area: 41000,
+        imageUrl: "images/temple2.webp"
+    },
 
-{
-    templeName: "Paris France Temple",
-    location: "Paris, France",
-    dedicated: "2026, May 31",
-    area: 44000,
-    imageUrl: "images/temple3.webp"
-},
+    {
+        templeName: "Paris France Temple",
+        location: "Paris, France",
+        dedicated: "2026, May 31",
+        area: 44000,
+        imageUrl: "images/temple3.webp"
+    },
 
-{
-    templeName: "Tokyo Japan Temple",
-    location: "Tokyo, Japan",
-    dedicated: "1980, October 27",
-    area: 52000,
-    imageUrl: "images/temple4.webp"
-},
+    {
+        templeName: "Tokyo Japan Temple",
+        location: "Tokyo, Japan",
+        dedicated: "1980, October 27",
+        area: 52000,
+        imageUrl: "images/temple4.webp"
+    },
 
-{
-    templeName: "London England Temple",
-    location: "London, England",
-    dedicated: "1958, September 7",
-    area: 42000,
-    imageUrl: "images/temple5.webp"
-},
+    {
+        templeName: "London England Temple",
+        location: "London, England",
+        dedicated: "1958, September 7",
+        area: 42000,
+        imageUrl: "images/temple5.webp"
+    },
 
-{
-    templeName: "Accra Ghana Temple",
-    location: "Accra, Ghana",
-    dedicated: "2004, January 11",
-    area: 17500,
-    imageUrl: "images/temple6.webp"
-},
+    {
+        templeName: "Accra Ghana Temple",
+        location: "Accra, Ghana",
+        dedicated: "2004, January 11",
+        area: 17500,
+        imageUrl: "images/temple6.webp"
+    },
 
-{
-    templeName: "Nairobi Kenya Temple",
-    location: "Nairobi, Kenya",
-    dedicated: "2025, April 13",
-    area: 18000,
-    imageUrl: "images/temple7.webp"
-},
+    {
+        templeName: "Nairobi Kenya Temple",
+        location: "Nairobi, Kenya",
+        dedicated: "2025, April 13",
+        area: 18000,
+        imageUrl: "images/temple7.webp"
+    },
 
-{
-    templeName: "Manila Philippines Temple",
-    location: "Manila, Philippines",
-    dedicated: "1984, September 25",
-    area: 26000,
-    imageUrl: "images/temple8.webp"
-},
+    {
+        templeName: "Manila Philippines Temple",
+        location: "Manila, Philippines",
+        dedicated: "1984, September 25",
+        area: 26000,
+        imageUrl: "images/temple8.webp"
+    },
 
-{
-    templeName: "Mexico City Mexico Temple",
-    location: "Mexico City, Mexico",
-    dedicated: "1983, December 2",
-    area: 116000,
-    imageUrl: "images/temple9.webp"
-}
+    {
+        templeName: "Mexico City Mexico Temple",
+        location: "Mexico City, Mexico",
+        dedicated: "1983, December 2",
+        area: 116000,
+        imageUrl: "images/temple9.webp"
+    }
 
 ];
 
 
 
-// Criar cards dos templos
+// Display temples
 
 function displayTemples(templeList) {
 
@@ -87,35 +87,32 @@ function displayTemples(templeList) {
 
     templeList.forEach((temple) => {
 
-
         const card = document.createElement("figure");
 
 
         card.innerHTML = `
 
-        <img 
-        src="${temple.imageUrl}" 
-        alt="${temple.templeName}"
-        loading="lazy">
+            <img 
+                src="${temple.imageUrl}" 
+                alt="${temple.templeName}"
+                loading="lazy">
 
+            <figcaption>
 
-        <figcaption>
+                <h2>${temple.templeName}</h2>
 
-        <h2>${temple.templeName}</h2>
+                <p><strong>Location:</strong> ${temple.location}</p>
 
-        <p><strong>Location:</strong> ${temple.location}</p>
+                <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
 
-        <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+                <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
 
-        <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-
-        </figcaption>
+            </figcaption>
 
         `;
 
 
         gallery.appendChild(card);
-
 
     });
 
@@ -123,10 +120,9 @@ function displayTemples(templeList) {
 
 
 
-// Filtros
+// Filters
 
-
-function showHome(){
+function showHome() {
 
     displayTemples(temples);
 
@@ -134,11 +130,16 @@ function showHome(){
 
 
 
-function showOld(){
+function showOld() {
 
-    const oldTemples = temples.filter(
-        temple => Number(temple.dedicated.substring(0,4)) < 1900
-    );
+    const oldTemples = temples.filter((temple) => {
+
+        const year = Number(temple.dedicated.substring(0, 4));
+
+        return year < 1900;
+
+    });
+
 
     displayTemples(oldTemples);
 
@@ -146,11 +147,16 @@ function showOld(){
 
 
 
-function showNew(){
+function showNew() {
 
-    const newTemples = temples.filter(
-        temple => Number(temple.dedicated.substring(0,4)) > 2000
-    );
+    const newTemples = temples.filter((temple) => {
+
+        const year = Number(temple.dedicated.substring(0, 4));
+
+        return year > 2000;
+
+    });
+
 
     displayTemples(newTemples);
 
@@ -158,11 +164,14 @@ function showNew(){
 
 
 
-function showLarge(){
+function showLarge() {
 
-    const largeTemples = temples.filter(
-        temple => temple.area > 90000
-    );
+    const largeTemples = temples.filter((temple) => {
+
+        return temple.area > 90000;
+
+    });
+
 
     displayTemples(largeTemples);
 
@@ -170,11 +179,14 @@ function showLarge(){
 
 
 
-function showSmall(){
+function showSmall() {
 
-    const smallTemples = temples.filter(
-        temple => temple.area < 10000
-    );
+    const smallTemples = temples.filter((temple) => {
+
+        return temple.area < 10000;
+
+    });
+
 
     displayTemples(smallTemples);
 
@@ -182,7 +194,7 @@ function showSmall(){
 
 
 
-// Menu mobile
+// Mobile menu
 
 const menuButton = document.querySelector("#menu");
 
@@ -197,9 +209,9 @@ menuButton.addEventListener("click", () => {
 
 
 
-// Links do menu
+// Navigation links
 
-const links = document.querySelectorAll("nav a");
+const links = document.querySelectorAll("#navigation a");
 
 
 links[0].addEventListener("click", showHome);
@@ -217,14 +229,14 @@ links[4].addEventListener("click", showSmall);
 // Footer
 
 document.querySelector("#currentyear").textContent =
-new Date().getFullYear();
+    new Date().getFullYear();
 
 
 document.querySelector("#lastModified").textContent =
-document.lastModified;
+    document.lastModified;
 
 
 
-// Mostrar todos quando abrir
+// Initial display
 
 displayTemples(temples);
