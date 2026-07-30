@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | Eternally Yours Wedding Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Montserrat:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <p class="eyebrow">WDD 131 &middot; W05 Project</p>
+    <h1>Website Planning Document</h1>
+    <p class="subtitle">Project: <span class="script">Eternally Yours</span> &mdash; a wedding website</p>
+  </header>
+
+  <main>
+
+    <section id="site-name" class="plan-section">
+      <h2>Site Name</h2>
+      <p class="site-name-display">Eternally Yours</p>
+      <p>The name was chosen because it captures the lasting, romantic promise at the heart of a wedding without tying the site to one specific couple's names &mdash; making it easy to reuse the template for different clients. It reads warmly in a classic, timeless voice, which matches the romantic/classic direction of the design.</p>
+      <p><em>Optional domain availability:</em> eternally-yours.love</p>
+    </section>
+
+    <section id="site-purpose" class="plan-section">
+      <h2>Site Purpose</h2>
+      <p>The site gives engaged couples and their guests a single, elegant hub for everything related to the wedding day. It presents the couple's story, shares the ceremony and reception details, collects RSVPs, and points guests toward the gift registry &mdash; replacing scattered group chats and paper invitations with one graceful digital experience.</p>
+    </section>
+
+    <section id="scenarios" class="plan-section">
+      <h2>Scenarios</h2>
+      <ul>
+        <li>Where and at what time is the wedding ceremony and reception taking place?</li>
+        <li>How do I RSVP, and can I let the couple know if I'm bringing a guest or have dietary restrictions?</li>
+        <li>Where is the couple registered, in case I'd like to send a gift?</li>
+      </ul>
+    </section>
+
+    <section id="color-schema" class="plan-section">
+      <h2>Color Schema</h2>
+      <p>The palette leans into a romantic, classic mood: soft blush pink paired with warm gold, grounded by an ivory background and a deep rose accent for emphasis.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#FBF6F0;">
+          <span class="swatch-label">Ivory<br>#FBF6F0</span>
+          <span class="swatch-use">Page background</span>
+        </div>
+        <div class="swatch" style="background:#F2C6C2;">
+          <span class="swatch-label">Blush Pink<br>#F2C6C2</span>
+          <span class="swatch-use">Section backgrounds, cards</span>
+        </div>
+        <div class="swatch swatch-light-text" style="background:#C9A227;">
+          <span class="swatch-label">Gold<br>#C9A227</span>
+          <span class="swatch-use">Headings, borders, buttons</span>
+        </div>
+        <div class="swatch swatch-light-text" style="background:#8B3A45;">
+          <span class="swatch-label">Deep Rose<br>#8B3A45</span>
+          <span class="swatch-use">Links, hover states, accents</span>
+        </div>
+        <div class="swatch swatch-light-text" style="background:#3A2E2E;">
+          <span class="swatch-label">Charcoal<br>#3A2E2E</span>
+          <span class="swatch-use">Body text</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="typography" class="plan-section">
+      <h2>Typography</h2>
+      <div class="type-samples">
+        <div class="type-sample">
+          <p class="sample-label">Display &mdash; Cormorant Garamond</p>
+          <p class="sample-display">Sofia &amp; Daniel are getting married</p>
+          <p class="sample-note">Used for the hero headline, section titles, and the couple's names.</p>
+        </div>
+        <div class="type-sample">
+          <p class="sample-label">Body &amp; Navigation &mdash; Montserrat</p>
+          <p class="sample-body">Join us as we celebrate our wedding day. Details on the ceremony, reception, and RSVP are below.</p>
+          <p class="sample-note">Used for paragraphs, navigation links, buttons, and form labels.</p>
+        </div>
+        <div class="type-sample">
+          <p class="sample-label">Accent &mdash; Parisienne</p>
+          <p class="sample-script">Eternally Yours</p>
+          <p class="sample-note">Used sparingly for the logo/wordmark and the "signature" moment on the invitation section.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="wireframes" class="plan-section">
+      <h2>Wireframes</h2>
+      <p>Simple block wireframes representing the home page layout, without real content, in desktop and mobile views.</p>
+
+      <h3>Desktop (wide view)</h3>
+      <div class="wireframe wireframe-desktop">
+        <div class="wf-block wf-header">Header / Logo</div>
+        <div class="wf-block wf-nav">Nav: Home &nbsp;|&nbsp; Our Story &nbsp;|&nbsp; Details &nbsp;|&nbsp; RSVP &nbsp;|&nbsp; Registry</div>
+        <div class="wf-block wf-hero">Hero image + couple names + date</div>
+        <div class="wf-row">
+          <div class="wf-block wf-col">Our Story</div>
+          <div class="wf-block wf-col">Event Details</div>
+          <div class="wf-block wf-col">RSVP Form</div>
+        </div>
+        <div class="wf-block wf-footer">Footer / Social links / Contact</div>
+      </div>
+
+      <h3>Mobile (narrow view)</h3>
+      <div class="wireframe wireframe-mobile">
+        <div class="wf-block wf-header">Header / Logo</div>
+        <div class="wf-block wf-nav">&#9776; Menu</div>
+        <div class="wf-block wf-hero">Hero image + names + date</div>
+        <div class="wf-block wf-col">Our Story</div>
+        <div class="wf-block wf-col">Event Details</div>
+        <div class="wf-block wf-col">RSVP Form</div>
+        <div class="wf-block wf-footer">Footer</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> Eternally Yours &mdash; Site Planning Document &mdash; WDD 131</p>
+  </footer>
+
+  <script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
