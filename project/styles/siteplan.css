@@ -117,6 +117,26 @@ main {
   font-weight: 600;
 }
 
+.swatch-ivory {
+  background-color: var(--ivory);
+}
+
+.swatch-blush {
+  background-color: var(--blush);
+}
+
+.swatch-gold {
+  background-color: var(--gold);
+}
+
+.swatch-deep-rose {
+  background-color: var(--deep-rose);
+}
+
+.swatch-charcoal {
+  background-color: var(--charcoal);
+}
+
 /* Typography samples */
 .type-samples {
   display: flex;
