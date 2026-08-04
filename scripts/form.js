@@ -30,7 +30,6 @@ name: "Tablet"
 const productSelect = document.querySelector("#product");
 
 
-
 products.forEach(product => {
 
 

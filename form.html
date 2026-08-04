@@ -3,19 +3,19 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Product Review Form">
+    <meta name="description" content="A responsive product review form where users can rate products, share feedback, and submit installation information.">
 
-<meta name="author" content="Alfredo Cassanje">
+    <meta name="author" content="Alfredo Cassanje">
 
-<title>Product Review Form</title>
+    <title>Product Review Form</title>
 
-<link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css">
 
-<script src="scripts/form.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 
 </head>
 
@@ -25,7 +25,7 @@
 
 <header>
 
-<h1>Product Review</h1>
+    <h1>Product Review</h1>
 
 </header>
 
@@ -45,15 +45,15 @@
 
 
 <label for="product">
-Product Name <span class="required">*</span>
+    Product Name <span class="required">*</span>
 </label>
 
 
 <select id="product" name="product" required>
 
-<option value="" disabled selected>
-Select a product...
-</option>
+    <option value="" disabled selected>
+        Select a product...
+    </option>
 
 </select>
 
@@ -61,88 +61,91 @@ Select a product...
 
 
 <label>
-Overall Rating <span class="required">*</span>
+    Overall Rating <span class="required">*</span>
 </label>
 
 
 <div class="rating">
 
 
-<label for="rating1">
 <input 
 type="radio"
 id="rating1"
 name="rating"
 value="1"
 required>
+
+<label for="rating1">
 ☆
 </label>
 
 
 
-<label for="rating2">
-
 <input 
 type="radio"
 id="rating2"
 name="rating"
-value="2">
+value="2"
+required>
 
+<label for="rating2">
 ☆☆
-
 </label>
 
 
 
-<label for="rating3">
 
 <input 
 type="radio"
 id="rating3"
 name="rating"
-value="3">
+value="3"
+required>
 
+<label for="rating3">
 ☆☆☆
-
 </label>
 
 
 
-<label for="rating4">
 
 <input 
 type="radio"
 id="rating4"
 name="rating"
-value="4">
+value="4"
+required>
 
+<label for="rating4">
 ☆☆☆☆
-
 </label>
 
 
 
-<label for="rating5">
 
 <input 
 type="radio"
 id="rating5"
 name="rating"
-value="5">
+value="5"
+required>
 
+<label for="rating5">
 ☆☆☆☆☆
-
 </label>
+
 
 
 </div>
 
 
+
+
+
 <label for="date">
-
-Date Installed <span class="required">*</span>
-
+    Date Installed <span class="required">*</span>
 </label>
+
 
 <input 
 type="date"
@@ -150,13 +153,16 @@ id="date"
 name="date"
 required>
 
+
+
+
+
+
 <label>
-
-Useful Features
-
+    Useful Features
 </label>
 
-<label>
+
 
 <input
 type="checkbox"
@@ -164,13 +170,13 @@ id="feature1"
 name="features"
 value="Durability">
 
+<label for="feature1">
 Durability
-
 </label>
 
 
 
-<label>
+
 
 <input
 type="checkbox"
@@ -178,13 +184,13 @@ id="feature2"
 name="features"
 value="Performance">
 
+<label for="feature2">
 Performance
-
 </label>
 
 
 
-<label>
+
 
 <input
 type="checkbox"
@@ -192,13 +198,13 @@ id="feature3"
 name="features"
 value="Design">
 
+<label for="feature3">
 Design
-
 </label>
 
 
 
-<label>
+
 
 <input
 type="checkbox"
@@ -206,9 +212,11 @@ id="feature4"
 name="features"
 value="Easy Use">
 
+<label for="feature4">
 Easy Use
-
 </label>
+
+
 
 
 
@@ -220,11 +228,17 @@ Written Review
 
 </label>
 
+
 <textarea
 id="review"
 name="review">
-
 </textarea>
+
+
+
+
+
+
 
 <label for="username">
 
@@ -238,13 +252,22 @@ type="text"
 id="username"
 name="username">
 
-<input
+
+
+
+
+
+<input 
 type="submit"
 value="Submit Review">
 
+
+
 </fieldset>
 
+
 </form>
+
 
 </main>
 
